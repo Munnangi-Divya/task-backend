@@ -8,7 +8,7 @@ const taskRoutes = require('./routes/taskRoutes')
 dotenv.config()
 
 const app = express()
-app.use(cors()
+app.use(cors())
 app.use(bodyParser.json())
 
 connectDB(process.env.MONGO_URI)
